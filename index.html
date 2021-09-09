@@ -2,35 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Deca:400">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display:700">
   <title>Frontend Mentor | 3-column preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-  
-  Sedans
-  Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
-  or on your next road trip.
+<body> 
+    <main id="card" class="card">
+      <h1 class="sr-only">3-column preview card for cars</h1>
 
-  SUVs
-  Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
-  and off-road adventures.
+      <section class="card__col card__col--sedan">
+        <img src="images/icon-sedans.svg" alt="" aria-hidden="true">
+        <h2 class="card__car-heading">SEDANS</h2>
+        <p class="card__car-description">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+        or on your next road trip.</p>
+        <a href="#" class="card__btn card__btn--sedan">Learn More</a>
+      </section>
 
-  Luxury
-  Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
-  rental and arrive in style.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <section class="card__col card__col--suv">
+        <img src="images/icon-suvs.svg" alt="" aria-hidden="true">
+        <h2 class="card__car-heading">SUVS</h2>
+        <p class="card__car-description">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+        <a href="#" class="card__btn card__btn--suv">Learn More</a>
+      </section>
+      
+      <section class="card__col card__col--luxury">
+        <img src="images/icon-luxury.svg" alt="" aria-hidden="true">
+        <h2 class="card__car-heading">LUXURY</h2>
+        <p class="card__car-description"> Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+        rental and arrive in style.</p>
+        <a href="#" class="card__btn card__btn--luxury">Learn More</a>
+      </section>
+    </main>
+
 </body>
 </html>

@@ -1,0 +1,123 @@
+/* ===========
+Global styles
+============== */
+
+body {
+	font-size: .9375rem;
+	min-height: 100vh;
+	font-family: "Lexend Deca", sans-serif;
+	font-weight: 400;
+	color: hsla(0, 0%, 100%, 0.75);
+	background-color: hsl(0, 0%, 95%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sr-only {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+/* ================
+Overall card styles
+=================== */
+
+.card {
+	width: 90%;
+	border-radius: 10px;
+	overflow: hidden;
+	max-width: 950px;
+}
+
+.card__car-heading {
+	font-family: "Big Shoulders Display", sans-serif;
+	color: hsl(0, 0%, 95%);
+	font-size: 2.5rem;
+}
+
+.card__car-description {
+	line-height: 175%;
+
+}
+
+/* ==========
+Card columns
+============= */
+
+
+.card__col {
+	padding: 3em;
+}
+
+.card__col--sedan {
+	background-color: hsl(31, 77%, 52%);
+}
+
+.card__col--suv {
+	background-color: hsl(184, 100%, 22%);
+}
+
+.card__col--luxury {
+	background-color: hsl(179, 100%, 13%);
+}
+
+/* ==========
+Card buttons
+============= */
+
+
+.card__btn {
+	background-color: hsl(0, 0%, 95%);
+	padding: 1em 2em;
+	border-radius: 30px;
+	border: 2px solid hsl(0, 0%, 95%);
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 1rem;
+}
+
+.card__btn:hover, .card__btn:focus {
+	background-color: transparent;
+	color: hsl(0, 0%, 95%);;
+}
+
+.card__btn--sedan {
+	color: hsl(31, 77%, 52%);
+}
+
+
+.card__btn--suv {
+	color: hsl(184, 100%, 22%);
+}
+
+.card__btn--luxury {
+	color: hsl(179, 100%, 13%);
+}
+
+/* ==========
+Desktop view
+============= */
+
+@media screen and (min-width: 830px) {
+	.card {
+		display: flex;
+	}
+
+	.card__col {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.card__car-description {
+		margin-top: 0px; /*reset margin collapsing since flex was used*/
+		margin-bottom: 5rem;
+	}
+
+	.card__btn {
+		margin-top: auto;
+	}
+}
+
